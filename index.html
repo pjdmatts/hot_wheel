@@ -5,7 +5,10 @@
 <head>
 	<title>Hi There!</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+
 	<script type="text/javascript" src="js/jquery-3.1.1.min (2).js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
@@ -15,8 +18,8 @@
 		<div class="row">
 			<div class="col-md-6"><img src="resources/logo200.png"></div>
 			<div class="col-md-6 text-right text-uppercase">
-				<h1>Peter Matthews</h1>
-				<h3>Full Stack Developer</h3>
+				<h1 class="super_title">Peter Matthews</h1>
+				<h4 class="sub_title">Full Stack Developer</h4>
 			</div>
 		</div>
 		<div class="row">
@@ -29,11 +32,13 @@
 				<h2>Featured Work</h2>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row text-center">
 			<div class="col-md-6">
-				<img src="resources/movies2.png" class="img-responsive" data-toggle="modal" data-target="#project1">
-				<h3>Appify</h3>
-				<p><a href="http://github.com/">Link to project</a></p>
+				<div class="img-container">
+					<img src="resources/movies2.png" class="featured-image img-responsive" data-toggle="modal" data-target="#project1">
+				</div>
+				<h3>Movie Trailer Showcase</h3>
+				<p><a href="https://github.com/pjdmatts/monkey_beads">Link to project</a></p>
 			</div>
 			<div class="col-md-6">
 				<img src="./bootstrap-prestructure_files/555x300" class="img-responsive">
@@ -59,10 +64,16 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+					<h4 class="modal-title" id="myModalLabel">Movie Trailer Showcase</h4>
 				</div>
 				<div class="modal-body">
-					<img class="img-responsive" src="images/555.jpeg"> This was my first project in this class. I learned a lot about HTML and CSS.
+					<img class="featured_image_detail img-responsive" src="resources/movies2.png">
+					<p>This was the first project I built during the FullStack Nanodegree
+						at Udacity</p>
+					<p>It is an example of server side Python. The script serves an html
+						page that lists our favorite movies and allows users to play the
+						trailer to each movie. Hovering over the poster art will provide a
+						short description of the movie. </p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
