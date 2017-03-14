@@ -16,5 +16,6 @@ body {
 	overflow: hidden;
 }
 
-.featured-image {
+.featured-image:hover {
+	cursor: pointer;	
 }
